@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Как выложить архив на GitHub Pages и uCoz — Красные линии</title>
+<meta name="description" content="Архив первоисточников 2007–2024: речи, лекции и интервью о корнях конфликта, Минске, Стамбуле, НАТО и взгляде Азии.">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <p class="kicker">Архив первоисточников · 2007–2024</p>
+    <h1 class="sitename"><a href="index.html">Красные линии</a></h1>
+    <p class="tagline">Речи, лекции и интервью, без которых нельзя понять истоки нынешнего противостояния</p>
+  </div>
+</div>
+<div class="nav">
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="index.html">Главная</a></td>
+      <td><a href="index.html#b1">Блок I</a></td>
+      <td><a href="index.html#b2">Блок II</a></td>
+      <td><a href="index.html#b3">Блок III</a></td>
+      <td><a href="index.html#b4">Блок IV</a></td>
+      <td><a href="smi.html">СМИ</a></td>
+    </tr>
+  </table>
+</div>
+<div class="wrap">
+<p class="crumb"><a href="index.html">Главная</a> · Публикация</p>
+<h1>Как открыть архив на GitHub Pages и на uCoz</h1>
+<p class="art-lead">Сайт нарочно сделан «старым» HTML 4.01: относительные ссылки, табличная вёрстка карточек, один CSS-файл, никаких модулей JavaScript, React и шрифтовых CDN. Так его ест и GitHub Pages, и файловый менеджер uCoz.</p>
+
+<div class="section">
+<h2>Состав архива</h2>
+<ul>
+  <li><code>index.html</code> — главная, все четыре блока;</li>
+  <li><code>smi.html</code> — раздел «СМИ», реакция международной прессы;</li>
+  <li><code>01-…html</code> … <code>10-…html</code> — конспекты первоисточников;</li>
+  <li><code>smi-01-…html</code> … <code>smi-08-…html</code> — конспекты публикаций;</li>
+  <li><code>style.css</code> — стили в той же папке, что и страницы;</li>
+  <li><code>img/</code> — фотографии (JPG), на страницах чередуются;</li>
+  <li><code>favicon.ico</code> — иконка;</li>
+  <li><code>README.txt</code> — эта же памятка текстом.</li>
+</ul>
+<p>Все ссылки относительные: <code>style.css</code>, <code>img/01.jpg</code>, <code>03-merkel-zeit-2022.html</code>. Не переименовывайте файлы и не разносите их по разным каталогам без правки href.</p>
+</div>
+
+<div class="section">
+<h2>GitHub Pages</h2>
+<ol>
+  <li>Создайте пустой репозиторий (например, <code>krasnye-linii</code>).</li>
+  <li>Загрузите <strong>содержимое</strong> ZIP в корень репозитория — чтобы <code>index.html</code> лежал не во вложенной папке, а сразу в корне.</li>
+  <li>Settings → Pages → Source: Deploy from a branch → branch <code>main</code> (или <code>master</code>), folder <code>/ (root)</code>.</li>
+  <li>Через минуту сайт откроется как <code>https://логин.github.io/имя-репо/</code>.</li>
+</ol>
+<p>Если репозиторий называется <code>логин.github.io</code>, архив станет корневым сайтом аккаунта.</p>
+</div>
+
+<div class="section">
+<h2>uCoz</h2>
+<ol>
+  <li>Панель uCoz → Файловый менеджер (или «Загрузить файл»).</li>
+  <li>Кодировка: <strong>UTF-8</strong>. В настройках сайта тоже выберите UTF-8, иначе кириллица «кракозябрами».</li>
+  <li>Загрузите <code>index.html</code>, остальные <code>.html</code>, <code>style.css</code>, <code>favicon.ico</code> в корень. Папку <code>img</code> загрузите целиком (все JPG внутрь <code>/img/</code>).</li>
+  <li>Главной сделайте <code>index.html</code>. Если uCoz подменяет главную своим шаблоном — откройте материал по прямому адресу <code>/index.html</code> или вставьте HTML в «страницу сайта» без обёртки движка.</li>
+  <li>Не включайте «визуальный редактор» поверх этих файлов: он ломает таблицы и кавычки.</li>
+</ol>
+<p>Протоколы — обычный HTTP/HTTPS хостинга uCoz, без PHP, без SSI, без AJAX. Страницы печатаются через «Печать» браузера (есть отдельный print-стиль).</p>
+</div>
+
+<div class="section">
+<h2>Локально, с диска</h2>
+<p>Распакуйте ZIP и откройте <code>index.html</code> двойным щелчком. Интернет нужен только чтобы перейти по ссылкам на YouTube и Die Zeit.</p>
+</div>
+
+<p class="btns"><a class="primary" href="arxiv.zip">Скачать ZIP</a> <a href="index.html">На главную</a></p>
+</div>
+<div class="foot">
+  <div class="foot-inner">
+    <p><strong>Красные линии</strong> — статический HTML-архив. Без скриптов, без серверной части, без внешних шрифтов.
+    Открывается с диска, на GitHub Pages и на uCoz. Кодировка UTF-8. Видео на сайт не загружались — только ссылки на первоисточники.</p>
+    <p>Материалы собраны как конспекты публичных выступлений, интервью и публикаций СМИ. Цитаты даны по общедоступным расшифровкам; полнота — у первоисточника.</p>
+    <p><a href="index.html">Оглавление</a> · <a href="smi.html">СМИ</a> · <a href="arxiv.zip">Скачать ZIP</a> · <a href="kak-vylozhit.html">Как выложить</a></p>
+  </div>
+</div>
+</body>
+</html>
